@@ -4,9 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="cbody">
+    <!--header starts-------------------->
+    <header>
+        <nav>
+            <ul id="navigationh">
+                <li class="inlineh"><a href="index.html" class="nav1h">Home</a></li>
+                <li class="inlineh"><a href="about.html" class="nav1h">About</a></li>
+                <li class="inlineh"><a href="services.html" class="nav1h">Services</a></li>
+                <li class="inlineh"><a href="contacts.html" class="nav1h">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1 id="head1c">Contacts</h1>
+    </header>
+    <!--header ends-------------------------->
+
+    <!--content starts----------------------->
+
+    <div id="options">
+        <h1 id="head2c">hi!how can we help you?</h1>
+        <p id="cpara">Please select a topic below related to your enquiry,if you don't find what you need,fill out our contact form.</p>
+        <div id="options2">
+        <h5 id="book" class="ohead">Book a Demo</h5>
+        <p class="arrow" id="ar1">></p>
+        <p id="bookp" class="opara">Request a demo from one of our conversation specialists.</p>
+        <h5 id="ginspire" class="ohead">Get Inspire</h5>
+        <p class="arrow" id="ar2">></p>
+        <p id="ginspirep" class="opara">Discover the many ways in which our customers use our company.</p>
+        <h5 id="bpart" class="ohead">Become a Partner</h5>
+        <p class="arrow" id="ar3">></p>
+        <p id="bpartp" class="opara">Join our Partner Program and earn 25% reccuring commsssions.</p>
+       </div>
+    </div>
+
+    <!--contact form starts------------------->
+
+
+     
+     <form id="cform" method="POST" action="" name="submit-to-google-sheet">
+        <h2 id="cformh">Ask Us..</h2>
+         <p>
+            <label for="fname" class="label">FIRST NAME <span class="mul">*</span></label><br>
+            <input type="text" id="fname" name="fname" class="box" required>
+         </p>
+         <p>
+            <label for="lname" class="label">LAST NAME <span class="mul">*</span></label><br>
+            <input type="text" id="lname" name="lname" class="box" required>
+         </p>
+         <p>
+            <label for="email" class="label">EMAIL <span class="mul">*</span></label><br>
+            <input type="email" id="email" name="email" class="box" required>
+         </p>
+         <p>
+            <label for="messg" class="label">ADDITIONAL MESSAGE</label><br>
+            <textarea name="messg" id="messg" class="box" cols="40" rows="5"></textarea>
+         </p>
+         <p>
+             <input type="submit" value="Send Message"  id="submit" name="submit-to-google-sheet">
+         </p>
+         <span id="dismsg"></span>
+     </form>
+     
     
+
+    <!--contact form ends-------------------->
+
+
+    <!--content ends------------------------->
+
+
+    <!--Foot note-->
+
+    <p id="footnote">*Inspired by sleeknotes</p>
+
+    <!--Foot note-->
+    <!--footer starts------------>
+    <div id="footerc">
+        <p id="socialpara-c">social links</p>
+        <ul id="footulc">
+            <li class="inline2c"><a href="#" class="socialc">Instagram</a></li>
+            <li class="inline2c"><a href="#" class="socialc">Email</a></li>
+            <li class="inline2c"><a href="#" class="socialc">Discord</a></li>
+            <li class="inline2c"><a href="#" class="socialc">Twitter</a></li>
+            <li class="inline2c"><a href="#" class="socialc">Facebook</a></li>
+        </ul>
+        <p id="footpara-c">&copy Copyright 2022.All Rights Reserved.</p>
+   </div>
+
+    <!--footer ends-------------->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWQee40jab_ylJWcjVgMixO7nwysHb2JictcvX0uFJfJNsjvm1tuLjeNgCzdv606kEdQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const dismsg = document.getElementById("dismsg")
+        
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                dismsg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    dismsg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
