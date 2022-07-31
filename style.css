@@ -205,7 +205,7 @@ header{
                         /*about page starts from here*/
 
                  /*all lists comes here ( header lists are common for all pages)*/
-                 
+
 #footula{                    /*ul*/  
     padding: 20px 0px 0px;
     margin: 0px 0px 0px 200px ;
@@ -371,3 +371,251 @@ header{
                          /*footer subparts ends here*/
 
                         /*about page ends here*/
+
+                        
+                     /*service page starts from here*/ 
+
+               /*all lists comes here ( header lists are common for all pages)*/
+#footuls{                    /*ul*/  
+    padding: 20px 0px 0px;
+    margin: 0px 0px 0px 200px ;
+}
+.inline2s{                   /*li*/
+    display: inline-block;
+    padding: 6px;
+    float: left;    
+}
+.socials{                       /*a*/  
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.socials:hover{
+    color: white;
+    background-color: #0479cc;
+    transition: 0.5s;
+}
+
+                /*all lists comes here ( header lists are common for all pages)*/
+
+                /*body,header,content,footer starts here (main)services*/
+
+#sbody{
+    margin: 0;
+    background-color: #c0dcf0 ;
+    max-width: 2000px;
+    min-width: 1000px;
+}    
+#footers{
+    clear: both;
+    background-color: #012641;
+    margin-top: 500px;
+    padding-bottom: 10px;
+    border-top: 5px solid #0479cc;
+}          
+
+                /*body,header,content,footer ends here (main)services*/
+
+                /*header subparts starts here*/
+
+
+#head1s{
+    margin: 0px 0px 0px 200px;
+    padding: 5px 40px;
+    display: inline;
+    background-color: #012641;
+    border-radius: 25px;
+    color: white
+}
+                /*header subparts ends here*/
+
+
+                /*content subparts starts here */
+
+#head2s{
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    color: #022e4e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 50px 0px 70px;
+    padding: 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+    border-bottom: 5px solid;
+}
+#html{
+    width: 200px;
+    float: left;
+    background-color: #02365b;
+    margin-left:150px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 65px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 15px 15px 5px grey;
+}
+#htmlh{
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#htmlpara{
+    margin-bottom: 0;
+}
+#htmlparas{
+    color: #21a0fa;
+}
+#css{
+    width: 200px;
+    background-color: #21a0fa;
+    float: left;
+    margin-left: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 17px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 15px 15px 5px grey;
+}
+
+#cssh{
+    text-transform: uppercase;
+    
+    color: #02365b;
+}
+#cssparas{
+    color: #02365b;
+}
+#jscript{
+    width: 200px;
+    background-color: #0093E9;background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    float: left;
+    margin-left: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 15px 15px 5px grey;
+}
+#jscripth{
+    color: white;
+    text-transform: capitalize;
+    
+}
+#jscriptparas{
+    color: #02365b;
+}
+.clear{
+    clear: both;
+}
+#head3s{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    color: #022e4e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+    border-bottom: 5px solid;
+}
+#sql{
+    width: 300px;
+    float: left;
+    text-align: center;
+    margin-left: 250px;
+    background-color: #02365b;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    padding-bottom: 28px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px grey;
+}
+#sqlh{
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+#sqlpara{
+
+}
+#sqlparas{
+    color: #21a0fa;
+}
+#react{
+    float: left;
+    width: 300px;
+    text-align: center;
+    margin-left: 100px;
+    background-color: #0093E9;background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px grey;
+}
+#reacth{
+    text-transform: capitalize;
+}
+#reactparas{
+    color: #02365b;
+}
+
+                /*content subparts ends here */
+
+                 /*footer subparts starts here*/
+                
+#footpara-s{
+    text-align: right;
+    clear: both;
+    padding: 5px 9px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    margin-left: 190px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    display: inline-block;
+    border-left: solid ;
+    color: white;
+}
+#socialpara-s{
+    float: left;
+    margin: 18px 0px 10px 20px;  
+    font-size: x-large; 
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: solid;
+    padding: 5px 7px;
+    color: white;
+}
+
+                  /*footer subparts ends here*/
+
+                      /*service page ends here*/
