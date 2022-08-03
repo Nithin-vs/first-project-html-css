@@ -15,6 +15,7 @@ Files i have added:
 6. stranger things animated image
 7. trees image
 
+
 Discription of files..
 1. index.html:
               This html codes contain a header section inside body of the file which has navigation options to other pages..
@@ -29,3 +30,4 @@ Discription of files..
              two values. I will keep learning this one..
              I didn't use flexbox commands to this files because i have to learn it..
              I simply animated some elements after watching some videos..
+
